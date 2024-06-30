@@ -8,6 +8,7 @@ const Form = ({setAgePerson}) => {
     const {register, handleSubmit, reset, formState: {errors, isValid}} = useForm({mode: "onBlur"});
     const [showTextForm, setShowTextForm] = useState(false);
 
+
     const submit = (data) => {
         const fullAge = data.year + '-' + data.month + '-' + data.day;
         setAgePerson(fullAge);
